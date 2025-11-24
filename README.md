@@ -7,7 +7,7 @@ Compatibility mode
 
 MacOS 15.7.1
 
-When using Godot's `get_viewport().get_texture().get_image().save_png()` function to save screenshot images of a game with partially transparent visuals (such as gradients which fade to transparent), the partially transparent pixels are blended with black, resulting in a darker (and uglier) image:
+When using Godot's `get_viewport().get_texture().get_image().save_png()` function to save screenshot images of a game with partially transparent visuals (such as gradients which fade to transparent), using a transparent background window, the partially transparent pixels are blended with black, resulting in a darker (and uglier) image:
 
 ![](https://github.com/mellowminx/godot-4-5-transparent-bg-screenshot-test/blob/main/default-preview.png)
 
