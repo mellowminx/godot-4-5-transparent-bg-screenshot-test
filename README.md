@@ -17,7 +17,7 @@ When using Godot's `get_viewport().get_texture().get_image().save_png()` functio
 
 ![](https://github.com/mellowminx/godot-4-5-transparent-bg-screenshot-test/blob/main/premultalpha-preview.png)
 
-However, the in-game visuals then suffer greatly by having the partially transparent pixels show up as solid white instead:
+However, the in-game visuals then suffer greatly by having the partially transparent pixels show up as solid white instead.
 
 In this Godot MRP, running the project saves two screenshots-- the default screenshot with the black-blended translucent pixels, and the hacky fixed screenshot. The screenshot images are just saved in the project folder.
 
