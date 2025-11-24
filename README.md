@@ -34,7 +34,7 @@ Thanks so much to [normalized](https://forum.godotengine.org/u/normalized/) in [
 
 ![](https://github.com/mellowminx/godot-4-5-transparent-bg-screenshot-test/blob/main/unpremultiplied%20vs%20premultiplied.png)
 
-Code from to [normalized](https://forum.godotengine.org/u/normalized/):
+Code from [normalized](https://forum.godotengine.org/u/normalized/):
 
 ```
 # just before saving
