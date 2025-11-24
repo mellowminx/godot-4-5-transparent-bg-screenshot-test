@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://c70u1npngy35y"]
+
+[ext_resource type="Script" uid="uid://80lgt6syhlnk" path="res://world.gd" id="1_f3sb7"]
+[ext_resource type="Texture2D" uid="uid://jhermgnsvqn5" path="res://circle.png" id="2_fj7yv"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_fj7yv"]
+blend_mode = 4
+
+[sub_resource type="GDScript" id="GDScript_fj7yv"]
+script/source = "extends Sprite2D
+
+var saved_material: CanvasItemMaterial
+
+func _ready() -> void:
+	saved_material = material
+	material = null
+
+func toggle_material(_toggled) -> void:
+	if _toggled:
+		material = saved_material
+	else:
+		material = null
+"
+
+[node name="world" type="Node2D" node_paths=PackedStringArray("sprite")]
+script = ExtResource("1_f3sb7")
+sprite = NodePath("white")
+
+[node name="white" type="Sprite2D" parent="."]
+material = SubResource("CanvasItemMaterial_fj7yv")
+position = Vector2(160, 160)
+texture = ExtResource("2_fj7yv")
+script = SubResource("GDScript_fj7yv")
+
+[node name="pink" type="Sprite2D" parent="white"]
+modulate = Color(1, 0.43220875, 0.8308381, 0.7882353)
+position = Vector2(-76.99999, 73.99999)
+scale = Vector2(0.52230936, 0.52230936)
+texture = ExtResource("2_fj7yv")
+
+[node name="aqua" type="Sprite2D" parent="white"]
+modulate = Color(0.34901962, 0.827451, 0.8862745, 0.7882353)
+position = Vector2(22.000008, 42)
+rotation = -1.3501253
+scale = Vector2(0.52230936, 0.52230936)
+texture = ExtResource("2_fj7yv")
+
+[node name="lavender" type="Sprite2D" parent="white"]
+modulate = Color(0.6780773, 0.61055905, 1, 0.7882353)
+position = Vector2(78.00001, -58)
+rotation = -2.9255407
+scale = Vector2(0.52230936, 0.52230936)
+texture = ExtResource("2_fj7yv")
