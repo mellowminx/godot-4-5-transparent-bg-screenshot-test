@@ -9,7 +9,7 @@ When using Godot's `get_viewport().get_texture().get_image().save_png()` functio
 
 ![](https://github.com/mellowminx/godot-4-5-transparent-bg-screenshot-test/blob/main/default-preview.png)
 
-`fix_alpha_edges()` and `convert(Image.FORMAT_RGBA8)` don't work to fix this.
+`fix_alpha_edges()` or `convert(Image.FORMAT_RGBA8)` or `linear_to_srgb()` don't work to fix this.
 
 [A hacky workaround discussed in this Reddit thread](https://www.reddit.com/r/godot/comments/u2i065/when_rendering_a_viewport_with_transparent/) does work-- using a `CanvasItemMaterial` set to `Premultiplied alpha` blend mode allows the screenshot to be rendered correctly:
 
