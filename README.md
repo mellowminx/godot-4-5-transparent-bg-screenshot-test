@@ -1,6 +1,8 @@
 # godot-4-5-transparent-bg-screenshot-test
 Godot MRP showing partially transparent pixels blended with black + hacky workaround
 
+![](https://github.com/mellowminx/godot-4-5-transparent-bg-screenshot-test/blob/main/game%20vs%20screenshot.png)
+
 Godot v4.5.stable.official [876b29033]
 
 Compatibility mode
@@ -22,5 +24,7 @@ However, the in-game visuals then suffer greatly by having the partially transpa
 In this Godot MRP, running the project saves two screenshots-- the default screenshot with the black-blended translucent pixels, and the hacky fixed screenshot. The screenshot images are just saved in the project folder.
 
 In my own game I implemented the hacky workaround so that the material is only applied for a split-second while taking the screenshot, but it's still perceptible as a white flash, very unpleasant.
+
+![](https://github.com/mellowminx/godot-4-5-transparent-bg-screenshot-test/blob/main/game%20vs%20screenshot%20premult%20alpha.png)
 
 [Godot issue reported as a bug here](https://github.com/godotengine/godot/issues/113103).
